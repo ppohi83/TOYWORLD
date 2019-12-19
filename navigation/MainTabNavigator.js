@@ -4,8 +4,14 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
-import SettingsScreen from '../screens/SettingsScreen';
-import Category1 from '../screens/Category'
+import SettingScreen from '../screens/SettingScreen';
+import Mydong from '../screens/Mydong'
+import Login from '../screens/Login'
+import Cartoy from '../screens/Cartoy';
+import Gurodong from '../screens/Gurodong';
+import Tomas from '../screens/Tomas';
+import Fantastom from '../screens/Fantastom';
+
 
 
 
@@ -15,9 +21,9 @@ const config = Platform.select({
   default: {},
 });
 
-const HomeStack = createSstackNavigator(
+const HomeStack = createStackNavigator(
   {
-    Home:HomeScreen
+    Home: Fantastom
   },
   config
 );
@@ -56,7 +62,7 @@ LinksStack.path = '';
 
 const SettingsStack = createStackNavigator(
   {
-    Settings: SettingsScreen,
+    Settings: SettingScreen,
   },
   config
 );
@@ -68,7 +74,7 @@ SettingsStack.navigationOptions = {
   ),
 };
 
-SettingsStack.path = '';
+SettingsStack.path = 'Gurodong';
 
 const tabNavigator = createBottomTabNavigator({
   HomeStack,

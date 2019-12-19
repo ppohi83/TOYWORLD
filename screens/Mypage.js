@@ -10,20 +10,25 @@ export default class Mypage extends Component {
 
   render() {
     return (
-      <View>
-        <Text>마이페이지 </Text>
-        <Text>프로필 보기 </Text>
-        <Text>판매내역 </Text>
-        <Text>구매내역 </Text>
-        <Text>관심목록 </Text>
-        <Text>공지사항 </Text>
-        <Text>내 지역 설정 </Text>
-        <Text>판매/대여중인 상품 </Text>
-        <Text>키워드 알림</Text>
-        <Text>채팅내역</Text>
-        <Text>모아보기</Text>
-        <Text>친구초대</Text>
-        <Text>약관보기</Text>
+        <View style={StyleSheet.container}/>
+        <ScrollView>
+        <Text>마이페이지</Text>
+        <Image style={{width:40,height:40}} source={require('../assets/images/person.png')}/>
+        <Text style={{fontWeight: 'bold'}}>break8636</Text>
+        <Text style={{fontWeight: 'bold'}}>break8636</Text>
+        <Image style={{alignSelf:'center',width:40,height:40}} source={require('../assets/images/판매내역.png')}/>
+        <Image style={{alignSelf:'center',width:40,height:40}} source={require('../assets/images/구매내역png')}/>
+        <Image style={{alignSelf:'center',width:40,height:40}} source={require('../assets/images/관심내역png')}/>
+        <Image style={{alignSelf:'center',width:40,height:40}} source={require('../assets/images/공지사하png')}/>
+        <Image style={{alignSelf:'center',width:40,height:40}} source={require('../assets/images/내지역설정png')}/>
+        <Image style={{alignSelf:'center',width:40,height:40}} source={require('../assets/images/판매/대여중인 상품png')}/>
+        <Image style={{alignSelf:'center',width:40,height:40}} source={require('../assets/images/키워드 알림png')}/>
+        <Image style={{alignSelf:'center',width:40,height:40}} source={require('../assets/images/채팅내역png')}/>
+        <Image style={{alignSelf:'center',width:40,height:40}} source={require('../assets/images/모아보기png')}/>
+        <Image style={{alignSelf:'center',width:40,height:40}} source={require('../assets/images/친구초대png')}/>
+        <Image style={{alignSelf:'center',width:40,height:40}} source={require('../assets/images/약관보기png')}/>
+
+
       </View>
     );
   }
